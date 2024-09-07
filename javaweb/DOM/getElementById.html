@@ -1,0 +1,36 @@
+<!-- 文档类型说明 注释 -->
+<!DOCTYPE html>
+<!-- 使用语言的地区 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 网页标题 -->
+    <title>DOM的使用(静态绑定, 动态绑定)</title>
+</head>
+<!--
+    1. 先得到h1的dom对象, 通过id获取
+    2. 对h1对应的dom对象操作即可
+ -->
+    <script type="text/javascript">
+        // id就是一个dom对象
+        function getValue() {
+            var id = document.getElementById("header");
+            alert(id.innerText);
+        }
+
+        // 动态绑定的演示
+        window.onload = function () {
+            // 获取dom对象
+            var content = document.getElementById("dynamic");
+            content.onclick = function () {
+                alert(content.innerText);
+            }
+        }
+    </script>
+<body>
+    <h1 id="header" onclick="getValue()">Hello, World</h1>
+    <p id="dynamic">动态绑定click~</p>
+</body>
+
+</html>

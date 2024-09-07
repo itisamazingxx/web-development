@@ -1,0 +1,40 @@
+<!-- 文档类型说明 注释 -->
+<!DOCTYPE html>
+<!-- 使用语言的地区 -->
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    数值类型: number
+    字符串类型: string
+    对象类型: object
+    布尔类型: boolean
+    函数类型: function
+     -->
+    <title>JS数据类型</title>
+    <script type="text/javascript">
+        var age = 10;
+        console.log(age);
+        console.log(typeof age)
+        age = 1.1;
+        // 数据类型都是number
+        console.log(typeof age);
+        // 数组的定义
+        var cars = ["volvo", "Audi", "BMW"];
+        cars2 = [];
+        // 添加元素 如果访问没有定义过的返回undefined
+        cars2[0] = "Audi";
+
+        // 特殊值
+        var nope; // 类型是undefined
+        var address = null; // 类型是null
+        console.log(10 * "abc") // NaN (not a number)
+
+        var point = 'abc'; // String也可以用单引号
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!--
+    演示JavaScript函数的用法
+ -->
+<!DOCTYPE html>
+<!-- 使用语言的地区 -->
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <title>JS函数</title>
+    <script type="text/javascript">
+
+        function hi() {
+            alert("hi~awesome world~");
+            // 函数必须调用才执行
+        }
+        // hi() 直接调用
+
+        // 定义有形参的函数
+        function hello(name) {
+            alert("hello" + name);
+        }
+        hello("Cookie");
+
+        // 定义有形参和返回值的函数
+        function add(n1, n2) {
+            return n1 + n2;
+        }
+        console.log(add(1, 3))
+
+    </script>
+</head>
+<body>
+        <!--
+            想要函数执行:
+            1. 调用
+            2. 通过事件触发该函数
+            (演示为button添加函数监听) - 静态注册事件
+        -->
+    <button onclick="hi()">Click On</button>
+</body>
+</html>

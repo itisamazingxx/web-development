@@ -1,0 +1,32 @@
+<!--
+    演示JavaScript中创建对象
+ -->
+<!DOCTYPE html>
+<!-- 使用语言的地区 -->
+<html lang="us">
+<head>
+    <!-- 文件字符集 -->
+    <meta charset="UTF-8">
+    <title>创建对象</title>
+    <script type="text/javascript">
+        <!-- 创建对象 -->
+        var person = new Object();
+        // 添加属性
+        person.name = "jingwen";
+        person.say = function () {
+            console.log(this.name); // 输出this
+        }
+        <!-- 自定义对象方法2 -->
+        var student = {
+            name: "caroline",
+            age: 19,
+            hi: function () {
+                console.log(this.name);
+            }
+        }
+        student.hi();
+    </script>
+</head>
+<body>
+</body>
+</html>

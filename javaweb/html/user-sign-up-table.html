@@ -1,0 +1,70 @@
+<!-- 文档类型说明 注释 -->
+<!DOCTYPE html>
+<!-- 使用语言的地区 -->
+<html lang="en">
+
+<head>
+    <!-- 网页字符集 -->
+    <meta charset="UTF-8">
+    <!-- 网页标题 -->
+    <title>User Sign Up Sheet</title>
+</head>
+
+<!--
+    完成会员注册表单的练习
+    form 标签就是表单
+    input type=text 是文件输入框
+    input type=password 是密码输入框 value 设置默认显示内容
+    input type=radio 是单选框 name 属性可以对其进行分组
+    input type=checkbox 是复选框 checked="checked"表示默认选中
+    input type=reset 是重置按钮 value 属性修改按钮上的文本
+    input type=submit 是提交按钮 value 属性修改按钮上的文本
+    input type=button 是按钮 value 属性修改按钮上的文本
+    input type=file 是文件上传域
+    input type=hidden 是隐藏域
+    当我们要发送某些信息，而这些信息，不需要用户参与，就可以使用隐藏域 (提交的时候同时发送给服务器)
+    select 标签是下拉列表框
+    option 标签是下拉列表框中的选项 selected="selected"设置默认选中
+    textarea 表示多行文本输入框 (起始标签和结束标签中的内容是默认值) rows 属性设置可以显示几行的高度
+    cols 属性设置每行可以显示几个字符宽度
+-->
+<body>
+
+    <form>
+        用户注册信息<br/>
+        用户名称: <input type="text" name="username"><br/> <!-- 必须要给input栏设置valid name值, 不然内容无法提交到后端服务器 -->
+        用户密码: <input type="password" name="password"><br/>
+        确认密码: <input type="password" name="re-password"><br/>
+
+        请选中你喜欢的人物<br/> <!-- 多选框 -->
+        <input type="checkbox" name="person" value="liu">刘姥姥<br/>
+        <input type="checkbox" name="person" value="lin">林黛玉<br/>
+        <input type="checkbox" name="person" value="xue">薛宝钗<br/>
+        <!-- 当一组多选框的name属性相同时 提交表单时 所有被选中的多选框的value值将作为数组发送到服务器 -->
+        <!-- 当用户选中多选框并提交表单时，如果选中了“林黛玉”和“薛宝钗” -->
+        <!-- 浏览器将发送如下数据 person=lin&person=xue -->
+
+        请选中你的性别<br/> <!-- 单选框 -->
+        <input type="radio" name="gender" value="male">男<br/>
+        <input type="radio" name="gender" value="female" checked>女<br/>
+
+        请选择喜欢的城市<br/> <!-- 下拉菜单 -->
+        <select name="city">
+            <option value="beijing">北京</option>
+            <option value="hangzhou">杭州</option>
+        </select>
+
+        自我介绍<br/> <!-- 文本域 -->
+        <textarea rows="6" cols="20"></textarea>
+
+        请上传文件<input type="file" name="my-file" value="upload"><br/> <!-- 添加文件-->
+
+        <input type="submit" value="submit">提交<br/>
+        <input type="reset" value="reset">重置<br/>
+
+
+    </form>
+
+</body>
+
+</html>

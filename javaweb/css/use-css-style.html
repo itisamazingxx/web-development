@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css使用的三种方式</title>
+    <!--
+    1. 在标签的style属性上设置CSS样式 (没有复用性)
+    2. 在head标签中, 使用style标签来定义需要的CSS样式
+    3. 把CSS样式写成单独的CSS文件, 再通过link标签引入 (推荐使用这种)
+    -->
+
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 100px;
+            background: beige;
+        }
+        span {
+            border: 3px solid red; /* 方法2的用法 */
+        }
+    </style>
+</head>
+
+<body>
+<div>hello, beijing</div>
+<br/>
+<span>hello, span</span>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    使用xml文件存储学生信息
+    可扩展标记语言
+
+    xml: 该文件的类型
+    version="1.0" 版本
+    encoding="UTF-8" 文件编码
+    students: root元素/根元素
+    <student></student>表示一个子元素
+
+    标签的用法:
+    1. 区分大小写，例如 <P>和<p>是两个不同的标记
+    2.不能以数字开头
+    3.不能包含空格
+    4.名称中间不能包含冒号(:)
+    5.如果标签单词需要间隔 建议使用下划线 比如 <book_title>hello</book_title>
+-->
+<students>
+    <student id = "01">
+        <name>cru</name>
+        <age>22</age>
+    </student>
+    <student id = "02">
+        <name>john</name>
+        <age>32</age>
+    </student>
+</students>
