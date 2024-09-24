@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>选择器的优先级</title>
+
+    <!--
+    选择器优先级的顺序为:
+        inline-styling > id选择器 > 类选择器 > 元素选择器
+    }
+    -->
+    <style type="text/css">
+        
+        #block {
+            color: green;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div style="color: greenyellow" id="block">This is a block~</div>
+    <!-- inline-styling的优先级大于id选择器, 对于个div的渲染只会显示inline的效果 -->
+</body>
+
+</html>

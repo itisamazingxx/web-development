@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+
+    <!--
+    首先思考什么时候需要用到类选择器?
+    image a scenario:
+    我们有三个div需要进行渲染, 其中有两个需要设计成完全相同的样式
+    元素选择器会作用于全部div(排除)
+    id选择器只能作用于一个div(排除)
+
+    class选择器可以重复使用
+    多个元素可以共用一个class选择器的值
+    -->
+    <style type="text/css">
+        .block {
+            color: greenyellow;
+        }
+        .sub-block {
+            color: orange;
+        }
+        .css-content {
+            color: rebeccapurple;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="block">This is a block~</div>
+    <br/>
+    <div class="block">This is another block~</div>
+    <br/>
+    <div class="sub-block">This is the third block~</div>
+    <p class="css-content">This is a content</p>
+</body>
+
+</html>

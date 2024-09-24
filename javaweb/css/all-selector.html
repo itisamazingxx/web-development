@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>组合选择器</title>
+
+    <!--
+    组合选择器的目的是让多个选择器共用一个css代码
+
+    组合选择器基本语法:
+    选择器1, 选择器2, ... 选择器n {
+        属性; 值
+    }
+    -->
+    <style type="text/css">
+        
+        .block, #content {
+            color: greenyellow;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="block">This is a block~</div>
+    <p id="content">This is a content</p>
+</body>
+
+</html>

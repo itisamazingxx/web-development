@@ -2,29 +2,36 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>css快速入门</title>
 
     <!--
-    CSS样式标签通常写在HTML文档的<head>部分
-    这样样式会在页面加载时应用到所有匹配的元素
-    div{} - 表示对div元素进行样式的指定
-     -->
+    1. 如果在head标签内出现了<style type="text/css"></style>
+       则此部分为css渲染的内容
+
+    2. css样式标签通常写在HTML文档的<head>部分 这样样式会在页面加载时应用到所有匹配的元素
+       body中有两个div模块, css会同时为所有的div进行渲染
+
+    3. div {} - 表示对div元素进行样式的指定
+       这个div为元素选择器(标签选择器)
+    -->
 
     <style type="text/css">
         div {
             width: 300px;
             height: 100px;  /* 属性 */
-            background-color: beige; /* css的注释跟html不一样, 跟java有点像 */
+            background-color: beige /* css的注释跟html不一样, 跟java有点像 */
         }
     </style>
+
 </head>
 
 <body>
-<div>Hello, Beijing~</div>
-<br/>
-<div>Hello, Hangzhou~</div>
-<br/>
+    <div>Hello, Beijing~</div>
+    <br/> <!-- 在HTML中插入一个换行符 -->
+    <div>Hello, Hangzhou~</div>
+    <br/>
 </body>
 
 </html>
