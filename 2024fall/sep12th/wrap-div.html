@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Lecture 2, Ya ya</title>
+    <style>
+        .external-solid-border {
+            border: 1px blue solid;
+            height: 300px;
+            width: 150px;
+        }
+
+        .box {
+            border: 2px red dashed;
+            height: 100px;
+            width: 100px;
+            background-color: greenyellow;
+        }
+
+        .positioned {
+            position: absolute;
+            left: 100px;
+            /*
+            absolute:
+            相对于最近的已定位的祖先元素进行定位 (在这里是外层的div块)
+            */
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- 把一个div标签wrap在另一个div标签内 -->
+        <div class="external-solid-border">
+            <div class="box positioned"></div>
+        </div>
+    </body>
+
+</html>

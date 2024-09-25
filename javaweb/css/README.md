@@ -1,6 +1,7 @@
 ## CSS
 1. Cascading Style Sheet
-2. 内容(html)和样式分离, 提高了web开发的效率
+2. 内容(html)和样式(css)分离, 提高了web开发的效率
+3. Most commonly associated with HTML
 
 ### css选择器
 1. 元素选择器
@@ -17,7 +18,7 @@
 ### css使用的三种方式
 1. **Inline-styling** (内联样式)
 
-    直接在标签内部进行渲染
+    直接在标签内部进行渲染, 使用style这个attribute
 
 2. **Internal Styling** (内部样式)
 

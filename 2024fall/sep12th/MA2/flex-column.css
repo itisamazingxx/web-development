@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    width: calc(33.33% - 10px);
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.box:nth-child(3n+1) {
+    background-color: lightcoral;
+}
+
+.box:nth-child(3n+2) {
+    background-color: lightgreen;
+}
+
+.box:nth-child(3n+3) {
+    background-color: lightblue;
+}

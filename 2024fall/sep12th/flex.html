@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Lecture 2, Ya ya</title>
+    <style>
+        .container {
+            border: 2px blue solid;
+            display: flex;
+        }
+
+        /* 
+        任何应用了display: flex
+        或display: inline-flex的元素都变成了Flex容器
+        Flex容器中的每个直接子元素都会自动成为Flex项目(子元素)
+        Flexbox允许父容器(即.container)控制其子元素(即.box)的布局
+        */
+        .box {
+            border: 2px red dashed;
+            height: 50px;
+            width: 50px;
+            background-color: greenyellow;
+        }
+        /* 
+        px代表像素pixel
+        height: 50px表示此代码块的高度为50px
+        这表示这个div元素的垂直高度占据屏幕上50个像素
+        */
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+
+</html>
