@@ -2,6 +2,7 @@
 1. servlet是SpringMVC的基石
 2. 3.0版本以后支持注解, 同时支持web.xml配置
 3. servlet是被tomcat调用的
+4. **主要职责是处理HTTP请求, 并生成HTTP响应**
 
 ### 浏览器第一次请求Servlet流程
 1. 查询web.xml
